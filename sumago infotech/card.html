@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-inner{
+            position: relative;
+            width: 50%;
+            height: 50%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .card:hover .card-inner{
+            transform: rotateY(180deg);
+        }
+        .card-front,.card-back{
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            /* -webkit-backface-visibility: hidden; */
+            border-radius: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="1.webp" alt="">
+            </div>
+            <div class="card-back">
+                <img src="1.webp" alt="">
+                <!-- <h3>Boat 135g ultra sound</h3>
+                <h1>rs 40,8888</h1> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
